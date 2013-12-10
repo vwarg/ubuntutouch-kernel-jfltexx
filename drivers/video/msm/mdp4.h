@@ -867,7 +867,7 @@ static inline void mdp4_dsi_video_vsync_ctrl(struct fb_info *info,
 {
 }
 
-static inline void mdp4_overlay_dsi_video_start(void)
+/*static*/ inline void mdp4_overlay_dsi_video_start(void)
 {
 	/* empty */
 }

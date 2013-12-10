@@ -3652,7 +3652,7 @@ static void synaptics_init_power_on(struct work_struct *work)
 	struct synaptics_rmi4_data *rmi4_data =
 		container_of(work,
 			struct synaptics_rmi4_data, work_init_power_on.work);
-
+/*
 #ifdef CONFIG_FB_MSM_MIPI_SAMSUNG_OCTA_VIDEO_FULL_HD_PT_PANEL
 	if (!touch_display_status) {
 			dev_info(&rmi4_data->i2c_client->dev,
@@ -3664,7 +3664,8 @@ static void synaptics_init_power_on(struct work_struct *work)
 	}
 #else
 	synaptics_rmi4_late_resume(&rmi4_data->early_suspend);
-#endif
+#endif*/
+	synaptics_rmi4_late_resume(&rmi4_data->early_suspend);
 }
 
  /**
